@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/lista-de-verificacion.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac2c8540a9.js" crossorigin="anonymous"></script>
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div>
+                <img src="assets/lista-de-verificacion.png" alt="list">
+            </div>
+            <form action="">
+                <input id="input-task" type="text" placeholder="Nombre de la tarea" data-form-input>
+                <input itemid="input-date" type="datetime-local" name="" id="input-date" placeholder="DD/MM/YYYY" data-form-date>
+                <button id="btn-add-task" type="submit" data-form-btn>Agregar tarea <i class="fa-solid fa-plus"></i></button>
+            </form>
+            <ul class="task-list-container">
+            </ul>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
